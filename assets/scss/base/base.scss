@@ -52,10 +52,11 @@ input[type="checkbox"] {
 // 스크롤바 막대
 // 스크롤바 막대 외부
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 10px;
+  border: 1px solid $main-color;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: $main-color;
+  background-color: pink;
   border-radius: 10px;
 }
 ::-webkit-scrollbar-track {

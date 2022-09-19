@@ -308,11 +308,12 @@ input[type=checkbox] {
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 10px;
+  border: 1px solid #000;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #000;
+  background-color: pink;
   border-radius: 10px;
 }
 
