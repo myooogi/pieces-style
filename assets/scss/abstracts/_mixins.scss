@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 @mixin ellipsis {
   overflow: hidden;
   white-space: nowrap;
@@ -49,7 +51,6 @@
   margin-left: $margin;
 }
 
-//effect
 @mixin longShadow($shadowColor: rgba(0, 0, 0, 1), $limit: 20) {
   $shadow: "";
   @for $i from 1 to $limit {
