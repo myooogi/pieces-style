@@ -1,0 +1,63 @@
+@import "../abstracts/variables";
+
+html,
+body,
+pre,
+code,
+kbd,
+samp {
+  font-family: $font-base;
+}
+
+html {
+  // cursor: $cursor-url, auto;
+}
+
+body {
+  font-size: $font-base-size;
+  color: $main-color;
+  background-color: $sub-color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: auto;
+}
+
+label {
+  cursor: inherit;
+}
+
+a,
+button {
+  // cursor: $cursor-click-url, pointer;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  outline: 0;
+}
+
+::selection {
+  background-color: $main-color;
+  color: $sub-color;
+}
+
+//scroll-bar
+// 스크롤바 전체
+// 스크롤바 막대
+// 스크롤바 막대 외부
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: $main-color;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: rgba($main-color, 0.3);
+}
