@@ -3,7 +3,11 @@
   font-weight: 700;
   src: url(../../fonts/Galmuri9.woff2) format("woff2"), url(../../fonts/Galmuri11.woff2) format("woff2"), url(../../fonts/Galmuri11-Bold.woff2) format("woff2"), url(../../fonts/Galmuri14.woff2) format("woff2");
 }
-body {
+.btn-sm {
+  font-family: "Galmuri9", sans-serif;
+}
+
+.btn-lg, body {
   font-family: "Galmuri11", sans-serif;
 }
 
@@ -272,7 +276,11 @@ video {
   display: none;
 }
 
-body {
+.btn-sm {
+  font-family: "Galmuri9", sans-serif;
+}
+
+.btn-lg, body {
   font-family: "Galmuri11", sans-serif;
 }
 
@@ -350,14 +358,19 @@ input[type=checkbox] {
 
 ::-webkit-scrollbar-thumb {
   background-color: #000;
-  height: 30%;
+  height: 20%;
 }
 
 ::-webkit-scrollbar-track {
-  border-left: 1px solid rgba(0, 0, 0, 0.8);
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
 }
 
-body {
+.btn-sm {
+  font-family: "Galmuri9", sans-serif;
+}
+
+.btn-lg, body {
   font-family: "Galmuri11", sans-serif;
 }
 
@@ -396,7 +409,11 @@ xl - 30
   font-weight: 700;
   src: url(../../fonts/Galmuri9.woff2) format("woff2"), url(../../fonts/Galmuri11.woff2) format("woff2"), url(../../fonts/Galmuri11-Bold.woff2) format("woff2"), url(../../fonts/Galmuri14.woff2) format("woff2");
 }
-body {
+.btn-sm {
+  font-family: "Galmuri9", sans-serif;
+}
+
+.btn-lg, body {
   font-family: "Galmuri11", sans-serif;
 }
 
@@ -422,4 +439,13 @@ button {
   background-color: #000;
   border: 1px solid #000;
   border-radius: 3px;
+}
+
+/* btn- size */
+.btn-sm {
+  font-size: 0.625rem;
+}
+
+.btn-lg {
+  font-size: 1rem;
 }

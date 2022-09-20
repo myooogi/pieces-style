@@ -9,7 +9,7 @@
   background-color: $bg;
   border: $border;
   border-radius: $radius;
-  @extend %default-box-shadow;
+  @extend %out-box-shadow;
 }
 
 button {
@@ -22,7 +22,14 @@ button {
 .point-btn {
   font-weight: 700;
 }
-
 .dark-btn {
   @include btn-style(0.8rem 1rem, $color-white, $color-black, 1px solid $color-black);
+}
+
+/* btn- size */
+.btn-sm {
+  @include g9-xs;
+}
+.btn-lg {
+  @include g11-base;
 }
