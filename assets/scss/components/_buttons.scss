@@ -3,16 +3,26 @@
 @import "../abstracts/variables";
 @import "../abstracts/placeholders";
 
-@mixin btn-style($padding, $color, $bg, $border, $radius) {
+@mixin btn-style($padding, $color, $bg, $border, $radius: 3px) {
   padding: $padding;
   color: $color;
   background-color: $bg;
   border: $border;
   border-radius: $radius;
-  @extend %box-shadow;
+  @extend %default-box-shadow;
+}
+
+button {
+  @include btn-style(0.8rem 1.1rem, $color-black, $color-white, 1px solid $color-black);
 }
 
 .default-btn {
-  @include btn-style(0.8rem 1rem, $color-black, $color-white, 1px solid $color-black, 3px);
-  font-size: 18px;
+}
+
+.point-btn {
+  font-weight: 700;
+}
+
+.dark-btn {
+  @include btn-style(0.8rem 1rem, $color-white, $color-black, 1px solid $color-black);
 }

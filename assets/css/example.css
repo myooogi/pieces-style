@@ -53,3 +53,6 @@ xl - 30
 .container .button .box {
   display: flex;
 }
+.container .button .box button {
+  margin-right: 20px;
+}

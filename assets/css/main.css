@@ -4,11 +4,11 @@
   src: url(../../fonts/Galmuri9.woff2) format("woff2"), url(../../fonts/Galmuri11.woff2) format("woff2"), url(../../fonts/Galmuri11-Bold.woff2) format("woff2"), url(../../fonts/Galmuri14.woff2) format("woff2");
 }
 body {
-  font-family: "Galmuri14", sans-serif;
+  font-family: "Galmuri11", sans-serif;
 }
 
-.default-btn {
-  box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5), inset -4px -4px 0px rgba(0, 0, 0, 0.25);
+.dark-btn, button {
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25);
 }
 
 /* Adorable reset CSS */
@@ -273,11 +273,11 @@ video {
 }
 
 body {
-  font-family: "Galmuri14", sans-serif;
+  font-family: "Galmuri11", sans-serif;
 }
 
-.default-btn {
-  box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5), inset -4px -4px 0px rgba(0, 0, 0, 0.25);
+.dark-btn, button {
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25);
 }
 
 /*-------------------------------------------*/
@@ -316,7 +316,7 @@ samp {
 }
 
 body {
-  font-size: 1.125rem;
+  font-size: 0.75rem;
   color: #000;
   background-color: #fff;
   -webkit-font-smoothing: antialiased;
@@ -358,11 +358,11 @@ input[type=checkbox] {
 }
 
 body {
-  font-family: "Galmuri14", sans-serif;
+  font-family: "Galmuri11", sans-serif;
 }
 
-.default-btn {
-  box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5), inset -4px -4px 0px rgba(0, 0, 0, 0.25);
+.dark-btn, button {
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25);
 }
 
 /*-------------------------------------------*/
@@ -397,18 +397,29 @@ xl - 30
   src: url(../../fonts/Galmuri9.woff2) format("woff2"), url(../../fonts/Galmuri11.woff2) format("woff2"), url(../../fonts/Galmuri11-Bold.woff2) format("woff2"), url(../../fonts/Galmuri14.woff2) format("woff2");
 }
 body {
-  font-family: "Galmuri14", sans-serif;
+  font-family: "Galmuri11", sans-serif;
 }
 
-.default-btn {
-  box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5), inset -4px -4px 0px rgba(0, 0, 0, 0.25);
+.dark-btn, button {
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25);
 }
 
-.default-btn {
-  padding: 0.8rem 1rem;
+button {
+  padding: 0.8rem 1.1rem;
   color: #000;
   background-color: #fff;
   border: 1px solid #000;
   border-radius: 3px;
-  font-size: 18px;
+}
+
+.point-btn {
+  font-weight: 700;
+}
+
+.dark-btn {
+  padding: 0.8rem 1rem;
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #000;
+  border-radius: 3px;
 }
