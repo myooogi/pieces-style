@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@import "../abstracts/variables";
+@import "../base/typography";
 
 html,
 body,
@@ -8,7 +8,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: $font-base;
+  font-family: $font-family;
 }
 
 html {
@@ -16,9 +16,9 @@ html {
 }
 
 body {
-  font-size: $font-base-size;
-  color: $main-color;
-  background-color: $sub-color;
+  @include g14-sm;
+  color: $color-black;
+  background-color: $color-white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: auto;
 }
@@ -45,8 +45,8 @@ input[type="checkbox"] {
 }
 
 ::selection {
-  background-color: $main-color;
-  color: $sub-color;
+  background-color: $color-black;
+  color: $color-white;
 }
 
 //scroll-bar
@@ -55,12 +55,11 @@ input[type="checkbox"] {
 // 스크롤바 막대 외부
 ::-webkit-scrollbar {
   width: 10px;
-  border: 1px solid $main-color;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: pink;
-  border-radius: 10px;
+  background-color: $color-black;
+  height: 30%;
 }
 ::-webkit-scrollbar-track {
-  background-color: rgba($main-color, 0.3);
+  border-left: 1px solid rgba($color-black, 0.8);
 }

@@ -1,1 +1,18 @@
 @charset "utf-8";
+
+@import "../abstracts/variables";
+@import "../abstracts/placeholders";
+
+@mixin btn-style($padding, $color, $bg, $border, $radius) {
+  padding: $padding;
+  color: $color;
+  background-color: $bg;
+  border: $border;
+  border-radius: $radius;
+  @extend %box-shadow;
+}
+
+.default-btn {
+  @include btn-style(0.8rem 1rem, $color-black, $color-white, 1px solid $color-black, 3px);
+  font-size: 18px;
+}

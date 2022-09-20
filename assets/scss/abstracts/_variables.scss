@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-//Font
+//Fonts
 @font-face {
   font-family: "Galmuri9", "Galmuri11", "Galmuri14";
   font-weight: 700;
@@ -8,13 +8,9 @@
     url(../../fonts/Galmuri14.woff2) format("woff2");
 }
 
-$font-family: "Galmuri9", "Galmuri11", "Galmuri14", sans-serif !default;
-$font-base: "Galmuri14", sans-serif !default;
-$font-base-size: 18px !default;
-$font-g9: "Galmuri9", sans-serif !default;
-$font-g11: "Galmuri11", sans-serif !default;
-
 //Colors
-$main-color: #000;
-$sub-color: #fff;
-$point-color: #1bca56;
+$color-black: #000;
+$color-white: #fff;
+
+$color-01: #1bca56;
+$color-02: #6d57f1;

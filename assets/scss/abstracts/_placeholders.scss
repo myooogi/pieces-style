@@ -1,1 +1,20 @@
 @charset "utf-8";
+
+//fonts
+$font-g9: "Galmuri9", sans-serif !default;
+$font-g11: "Galmuri11", sans-serif !default;
+$font-g14: "Galmuri14", sans-serif !default;
+%font-g9 {
+  font-family: $font-g9;
+}
+%font-g11 {
+  font-family: $font-g11;
+}
+%font-g14 {
+  font-family: $font-g14;
+}
+
+//buttons
+%box-shadow {
+  box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5), inset -4px -4px 0px rgba(0, 0, 0, 0.25);
+}

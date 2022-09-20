@@ -1,10 +1,29 @@
 @charset "utf-8";
 
+@import "../scss/abstracts/variables";
+@import "../scss/base/typography";
+
 .container {
   width: 100%;
   height: 100%;
   padding: 50px 200px;
   section {
     margin-bottom: 50px;
+    .main_title {
+      @include g11-xl(1.7rem);
+      font-weight: 700;
+      color: $color-01;
+      margin-bottom: 30px;
+    }
+  }
+  .selection {
+    p {
+      font-size: 30px;
+    }
+  }
+  .button {
+    .box {
+      display: flex;
+    }
   }
 }
