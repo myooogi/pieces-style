@@ -47,3 +47,131 @@
   display: inline-block;
   margin-left: $margin;
 }
+
+@mixin check-icon($w: 8px, $h: 17px, $left: 7px, $top: -8px, $border-w: 0 2px 2px 0, $transform: rotate(45deg), $bg: transparent) {
+  @include pseudo;
+  box-sizing: border-box;
+  border-style: solid;
+  transform-origin: bottom left;
+  width: $w;
+  height: $h;
+  left: $left;
+  top: $top;
+  border-width: $border-w;
+  transform: $transform;
+  background-color: $bg;
+}
+
+@mixin triangle-icon {
+  @include pseudo;
+  box-sizing: border-box;
+  width: 0;
+  height: 10px;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 6px solid;
+  top: 6px;
+  left: 9px;
+}
+
+////////////////////////////////////////////////////////////////////////////////////
+///buttons
+
+@mixin btn-style($padding: 0.8rem 1rem, $color: $color-black, $bg: $color-white, $border: 1px solid $color-black, $radius: 3px) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: $padding;
+  color: $color;
+  background-color: $bg;
+  border: $border;
+  border-radius: $radius;
+  @extend %out-shadow;
+
+  &:active {
+    @extend %in-shadow;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+  &:focus-visible {
+    outline: 1px solid $color-black;
+  }
+}
+
+@mixin point-btn-style($color, $bg, $border: 1px solid $color-black) {
+  color: $color;
+  background-color: $bg;
+  border: $border;
+}
+
+////////////////////////////////////////////////////////////////////////////////////
+//forms
+
+//input
+@mixin input-style($padding: 0.8rem 1rem, $color: $color-black, $bg: $color-white, $border: 1px solid $color-black, $radius: 3px) {
+  padding: $padding;
+  color: $color;
+  background-color: $bg;
+  border: $border;
+  border-radius: $radius;
+  @extend %in-shadow;
+
+  &:focus {
+    outline: 0;
+  }
+  &:focus-visible {
+    outline: 1px solid $color-black;
+  }
+}
+//radio
+@mixin radio-style($padding: 0.5rem 0.9rem, $border: 1px dashed $color-black, $margin: 10px) {
+  padding: $padding;
+  border-bottom: $border;
+  margin-right: $margin;
+  vertical-align: bottom;
+  appearance: none;
+  cursor: pointer;
+
+  &:checked {
+    position: relative;
+    border-bottom: 2px solid $color-black;
+    &:after {
+      @include check-icon;
+    }
+  }
+  &:checked + span {
+    font-weight: 700;
+  }
+
+  &:focus-visible {
+    background-color: rgba($color-black, 0.1);
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  &:disabled + span {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
+//checkbox
+@mixin check-style($w: 15px, $h: 15px, $margin: 10px, $border: 1px solid $color-black, $color: $color-black, $bg: $color-white, $radius: 3px) {
+  content: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: $w;
+  height: $h;
+  margin-right: $margin;
+  border: $border;
+  color: $color;
+  background-color: $bg;
+  border-radius: $radius;
+  @extend %check-shadow;
+}

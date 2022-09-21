@@ -5,19 +5,10 @@
 @import "../abstracts/mixins";
 @import "../abstracts/functions";
 
-@mixin input-style($padding: 0.8rem 1rem, $color: $color-black, $bg: $color-white, $border: 1px solid $color-black, $radius: 3px) {
-  padding: $padding;
-  color: $color;
-  background-color: $bg;
-  border: $border;
-  border-radius: $radius;
-  @extend %in-shadow;
-
-  &:focus {
-    outline: 0;
-  }
-  &:focus-visible {
-    outline: 1px solid $color-black;
+.label {
+  @extend %focus-visible-remove;
+  span {
+    @extend %focus-visible-remove;
   }
 }
 
@@ -29,7 +20,11 @@ input[type="text"],
 textarea {
   @include input-style;
 }
-input[type="file"] {
+textarea {
+  line-height: 1.6;
+}
+input[type="file"],
+[type="checkbox"] {
   position: absolute;
   width: 0;
   height: 0;
@@ -37,16 +32,56 @@ input[type="file"] {
   overflow: hidden;
   border: 0;
 }
-textarea {
-  line-height: 1.6;
-}
 
-/*type=file*/
+// type=file
 .file {
+  display: flex;
   .upload {
     @include input-style;
   }
   label {
     @include btn-style;
+    position: relative;
+    margin-left: 5px;
   }
+}
+
+// type=radio
+input[type="radio"] {
+  @include radio-style;
+}
+
+.checkbox {
+  cursor: pointer;
+  span {
+    display: flex;
+    align-items: center;
+    position: relative;
+    &:before {
+      @include check-style;
+    }
+  }
+  input {
+    &:checked ~ span:before {
+      @extend %in-shadow;
+    }
+    &:checked ~ span:after {
+      @include check-icon(6px, 17px, 2px, -10px, 0 2px 2px 0);
+    }
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+    &:disabled + span {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+  }
+}
+
+// select
+select {
+  @include btn-style(0.8rem 3.5rem 0.8rem 1rem);
+  position: relative;
+  appearance: none;
 }

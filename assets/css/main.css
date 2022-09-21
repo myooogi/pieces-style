@@ -19,17 +19,25 @@ body {
   text-shadow: 1.4px 0.6px 1.3px rgba(0, 0, 0, 0.9);
 }
 
-.file label, .btn-lg, .btn-sm, button {
+select, .file label, .btn-lg, .btn-sm, button {
   box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25);
 }
 
-.file label:active, .file .upload, input[type=text],
+select:active, .checkbox input:checked ~ span:before, .file label:active, .file .upload, input[type=text],
 [type=password],
 [type=number],
 [type=email],
 [type=tel],
 textarea, .btn-lg:active, .btn-sm:active, button:active {
-  box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5), inset 2px 2px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5), inset 2px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+.checkbox span:before {
+  box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5), inset -1.7px -1.7px 0px rgba(0, 0, 0, 0.25);
+}
+
+.label span:focus-visible, .label:focus-visible {
+  outline: none;
 }
 
 /* Adorable reset CSS */
@@ -309,17 +317,25 @@ body {
   text-shadow: 1.4px 0.6px 1.3px rgba(0, 0, 0, 0.9);
 }
 
-.file label, .btn-lg, .btn-sm, button {
+select, .file label, .btn-lg, .btn-sm, button {
   box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25);
 }
 
-.file label:active, .file .upload, input[type=text],
+select:active, .checkbox input:checked ~ span:before, .file label:active, .file .upload, input[type=text],
 [type=password],
 [type=number],
 [type=email],
 [type=tel],
 textarea, .btn-lg:active, .btn-sm:active, button:active {
-  box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5), inset 2px 2px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5), inset 2px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+.checkbox span:before {
+  box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5), inset -1.7px -1.7px 0px rgba(0, 0, 0, 0.25);
+}
+
+.label span:focus-visible, .label:focus-visible {
+  outline: none;
 }
 
 /*-------------------------------------------*/
@@ -421,17 +437,25 @@ body {
   text-shadow: 1.4px 0.6px 1.3px rgba(0, 0, 0, 0.9);
 }
 
-.file label, .btn-lg, .btn-sm, button {
+select, .file label, .btn-lg, .btn-sm, button {
   box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25);
 }
 
-.file label:active, .file .upload, input[type=text],
+select:active, .checkbox input:checked ~ span:before, .file label:active, .file .upload, input[type=text],
 [type=password],
 [type=number],
 [type=email],
 [type=tel],
 textarea, .btn-lg:active, .btn-sm:active, button:active {
-  box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5), inset 2px 2px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5), inset 2px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+.checkbox span:before {
+  box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5), inset -1.7px -1.7px 0px rgba(0, 0, 0, 0.25);
+}
+
+.label span:focus-visible, .label:focus-visible {
+  outline: none;
 }
 
 /*-------------------------------------------*/
@@ -486,38 +510,37 @@ body {
   text-shadow: 1.4px 0.6px 1.3px rgba(0, 0, 0, 0.9);
 }
 
-.file label, .btn-lg, .btn-sm, button {
+select, .file label, .btn-lg, .btn-sm, button {
   box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25);
 }
 
-.file label:active, .file .upload, input[type=text],
+select:active, .checkbox input:checked ~ span:before, .file label:active, .file .upload, input[type=text],
 [type=password],
 [type=number],
 [type=email],
 [type=tel],
 textarea, .btn-lg:active, .btn-sm:active, button:active {
-  box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5), inset 2px 2px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5), inset 2px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+.checkbox span:before {
+  box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5), inset -1.7px -1.7px 0px rgba(0, 0, 0, 0.25);
+}
+
+.label span:focus-visible, .label:focus-visible {
+  outline: none;
 }
 
 button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
   padding: 0.8rem 1rem;
   color: #000;
   background-color: #fff;
   border: 1px solid #000;
   border-radius: 3px;
-}
-button:hover {
-  position: relative;
-}
-button:hover:after {
-  display: block;
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.08);
 }
 button:focus {
   outline: 0;
@@ -525,28 +548,22 @@ button:focus {
 button:focus-visible {
   outline: 1px solid #000;
 }
+button span:focus-visible {
+  outline: none;
+}
 
 /* btn- size */
 .btn-sm {
   font-size: 0.625rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
   padding: 0.4rem 0.6rem 0.5rem 0.6rem;
   color: #000;
   background-color: #fff;
   border: 1px solid #000;
   border-radius: 3px;
-}
-.btn-sm:hover {
-  position: relative;
-}
-.btn-sm:hover:after {
-  display: block;
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.08);
 }
 .btn-sm:focus {
   outline: 0;
@@ -557,24 +574,15 @@ button:focus-visible {
 
 .btn-lg {
   font-size: 1.125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
   padding: 1rem 1.2rem;
   color: #000;
   background-color: #fff;
   border: 1px solid #000;
   border-radius: 3px;
-}
-.btn-lg:hover {
-  position: relative;
-}
-.btn-lg:hover:after {
-  display: block;
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.08);
 }
 .btn-lg:focus {
   outline: 0;
@@ -602,9 +610,6 @@ button:focus-visible {
   opacity: 0.6;
   cursor: not-allowed;
 }
-.disabled-btn:hover:after {
-  display: none;
-}
 
 @font-face {
   font-family: "Galmuri9", "Galmuri11", "Galmuri14";
@@ -627,17 +632,25 @@ body {
   text-shadow: 1.4px 0.6px 1.3px rgba(0, 0, 0, 0.9);
 }
 
-.file label, button, .btn-sm, .btn-lg {
+select, .file label, button, .btn-sm, .btn-lg {
   box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25);
 }
 
-.file label:active, .file .upload, input[type=text],
+select:active, .checkbox input:checked ~ span:before, .file label:active, .file .upload, input[type=text],
 [type=password],
 [type=number],
 [type=email],
 [type=tel],
 textarea, button:active, .btn-sm:active, .btn-lg:active {
-  box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5), inset 2px 2px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5), inset 2px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+.checkbox span:before {
+  box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5), inset -1.7px -1.7px 0px rgba(0, 0, 0, 0.25);
+}
+
+.label span:focus-visible, .label:focus-visible {
+  outline: none;
 }
 
 input[type=text],
@@ -669,7 +682,12 @@ textarea:focus-visible {
   outline: 1px solid #000;
 }
 
-input[type=file] {
+textarea {
+  line-height: 1.6;
+}
+
+input[type=file],
+[type=checkbox] {
   position: absolute;
   width: 0;
   height: 0;
@@ -678,11 +696,9 @@ input[type=file] {
   border: 0;
 }
 
-textarea {
-  line-height: 1.6;
+.file {
+  display: flex;
 }
-
-/*type=file*/
 .file .upload {
   padding: 0.8rem 1rem;
   color: #000;
@@ -697,28 +713,129 @@ textarea {
   outline: 1px solid #000;
 }
 .file label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
   padding: 0.8rem 1rem;
   color: #000;
   background-color: #fff;
   border: 1px solid #000;
   border-radius: 3px;
-}
-.file label:hover {
   position: relative;
-}
-.file label:hover:after {
-  display: block;
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.08);
+  margin-left: 5px;
 }
 .file label:focus {
   outline: 0;
 }
 .file label:focus-visible {
+  outline: 1px solid #000;
+}
+
+input[type=radio] {
+  padding: 0.5rem 0.9rem;
+  border-bottom: 1px dashed #000;
+  margin-right: 10px;
+  vertical-align: bottom;
+  appearance: none;
+  cursor: pointer;
+}
+input[type=radio]:checked {
+  position: relative;
+  border-bottom: 2px solid #000;
+}
+input[type=radio]:checked:after {
+  display: block;
+  position: absolute;
+  content: "";
+  box-sizing: border-box;
+  border-style: solid;
+  transform-origin: bottom left;
+  width: 8px;
+  height: 17px;
+  left: 7px;
+  top: -8px;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  background-color: transparent;
+}
+input[type=radio]:checked + span {
+  font-weight: 700;
+}
+input[type=radio]:focus-visible {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+input[type=radio]:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+input[type=radio]:disabled + span {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.checkbox {
+  cursor: pointer;
+}
+.checkbox span {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.checkbox span:before {
+  content: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  border: 1px solid #000;
+  color: #000;
+  background-color: #fff;
+  border-radius: 3px;
+}
+.checkbox input:checked ~ span:after {
+  display: block;
+  position: absolute;
+  content: "";
+  box-sizing: border-box;
+  border-style: solid;
+  transform-origin: bottom left;
+  width: 6px;
+  height: 17px;
+  left: 2px;
+  top: -10px;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  background-color: transparent;
+}
+.checkbox input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.checkbox input:disabled + span {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 0.8rem 3.5rem 0.8rem 1rem;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 3px;
+  position: relative;
+  appearance: none;
+}
+select:focus {
+  outline: 0;
+}
+select:focus-visible {
   outline: 1px solid #000;
 }

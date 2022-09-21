@@ -5,46 +5,13 @@
 @import "../abstracts/mixins";
 @import "../abstracts/functions";
 
-@mixin btn-style($padding: 0.8rem 1rem, $color: $color-black, $bg: $color-white, $border: 1px solid $color-black, $radius: 3px) {
-  padding: $padding;
-  color: $color;
-  background-color: $bg;
-  border: $border;
-  border-radius: $radius;
-  @extend %out-shadow;
-
-  &:active {
-    @extend %in-shadow;
-  }
-
-  &:hover {
-    position: relative;
-    &:after {
-      @include pseudo;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba($color-black, 0.08);
-    }
-  }
-
-  &:focus {
-    outline: 0;
-  }
-  &:focus-visible {
-    outline: 1px solid $color-black;
-  }
-}
-
-@mixin point-btn-style($color, $bg, $border: 1px solid $color-black) {
-  color: $color;
-  background-color: $bg;
-  border: $border;
-}
-
 button {
   @include btn-style;
+  span {
+    &:focus-visible {
+      outline: none;
+    }
+  }
 }
 
 /* btn- size */
@@ -70,9 +37,4 @@ button {
 .disabled-btn {
   opacity: 0.6;
   cursor: not-allowed;
-  &:hover {
-    &:after {
-      display: none;
-    }
-  }
 }

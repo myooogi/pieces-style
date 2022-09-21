@@ -11,7 +11,7 @@
   <body>
     <div class="container">
       <section class="selection">
-        <h2 class="main_title">::Selection</h2>
+        <h2 class="main_title">::selection</h2>
         <p>마우스 드래그시 상태예시</p>
       </section>
       <section class="button">
@@ -50,7 +50,7 @@
           </div>
         </div>
       </section>
-      <section class="input">
+      <section class="input_form">
         <h2 class="main_title">input : text, password, number, file, email, tel</h2>
         <div class="box">
           <form action="">
@@ -59,13 +59,65 @@
             <input type="number" name="" id="" placeholder="번호를 입력하세요." />
             <input type="email" name="" id="" placeholder="이메일을 입력하세요." />
             <input type="tel" name="" id="" placeholder="전화번호를 입력하세요." />
-            <textarea name="" id="" cols="30" rows="10" placeholder="textarea 입니다."></textarea>
             <div class="file">
               <input class="upload" value="" placeholder="파일을 업로드 해주세요." />
-              <label for="file">파일 찾기</label>
-              <input type="file" id="file" />
+              <label class="label" for="file"><input type="file" id="file" /><span>파일 찾기</span></label>
             </div>
           </form>
+        </div>
+      </section>
+      <section class="textarea">
+        <h2 class="main_title">textarea</h2>
+        <div class="box">
+          <textarea name="" id="" cols="30" rows="10" placeholder="textarea 입니다."></textarea>
+        </div>
+      </section>
+      <section class="input_radio">
+        <h2 class="main_title">input : radio</h2>
+        <div class="box">
+          <div class="radio">
+            <label class="label"><input type="radio" name="ex_radio" checked /><span>YES</span></label>
+            <label class="label"><input type="radio" name="ex_radio" disabled /><span>and</span></label>
+            <label class="label"><input type="radio" name="ex_radio" /><span>NO</span></label>
+          </div>
+        </div>
+      </section>
+      <section class="input_checkbox">
+        <h2 class="main_title">input : checkbox</h2>
+        <div class="box">
+          <div class="check">
+            <div>
+              <label class="label checkbox" for="ex01">
+                <input type="checkbox" id="ex01" checked />
+                <span>파인애플</span>
+              </label>
+            </div>
+            <div>
+              <label class="label checkbox" for="ex02">
+                <input type="checkbox" id="ex02" disabled />
+                <span>복숭아</span>
+              </label>
+            </div>
+            <div>
+              <label class="label checkbox" for="ex03">
+                <input type="checkbox" id="ex03" />
+                <span>사과</span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="select">
+        <h2 class="main_title">select</h2>
+        <div class="box">
+          <select name="" id="">
+            <option disabled selected hidden>지역을 선택하세요.</option>
+            <option value="서울특별시">서울특별시</option>
+            <option value="인천광별시">인천광별시</option>
+            <option value="광주광역시">광주광역시</option>
+            <option value="부산광역시">부산광역시</option>
+            <option value="대구광역시">대구광역시</option>
+          </select>
         </div>
       </section>
     </div>

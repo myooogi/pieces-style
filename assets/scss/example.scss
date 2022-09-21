@@ -8,7 +8,7 @@
   section {
     margin-bottom: 50px;
     .main_title {
-      @include g11-xl(1.7rem);
+      @include g11-xl(1.5rem);
       font-weight: 700;
       color: $color-01;
       margin-bottom: 30px;
@@ -16,7 +16,7 @@
   }
   .selection {
     p {
-      font-size: 30px;
+      font-size: 20px;
     }
   }
   .button {
@@ -37,7 +37,7 @@
       }
     }
   }
-  .input {
+  .input_form {
     .box {
       form {
         display: flex;
@@ -46,13 +46,25 @@
         input {
           margin-bottom: 10px;
         }
-        textarea {
-          margin-bottom: 10px;
-        }
         .file {
+          margin-bottom: 20px;
           input {
+            margin-bottom: 0;
           }
         }
+      }
+    }
+  }
+  .input_radio {
+    label {
+      margin-right: 20px;
+    }
+  }
+  .input_checkbox {
+    .check {
+      display: flex;
+      div {
+        margin-right: 40px;
       }
     }
   }

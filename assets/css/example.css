@@ -45,13 +45,13 @@ xl - 30
   margin-bottom: 50px;
 }
 .container section .main_title {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #1bca56;
   margin-bottom: 30px;
 }
 .container .selection p {
-  font-size: 30px;
+  font-size: 20px;
 }
 .container .button .box {
   display: flex;
@@ -69,14 +69,26 @@ xl - 30
 .container .button .box .btn_box button {
   margin-bottom: 10px;
 }
-.container .input .box form {
+.container .input_form .box form {
   display: flex;
   flex-direction: column;
   width: 500px;
 }
-.container .input .box form input {
+.container .input_form .box form input {
   margin-bottom: 10px;
 }
-.container .input .box form textarea {
-  margin-bottom: 10px;
+.container .input_form .box form .file {
+  margin-bottom: 20px;
+}
+.container .input_form .box form .file input {
+  margin-bottom: 0;
+}
+.container .input_radio label {
+  margin-right: 20px;
+}
+.container .input_checkbox .check {
+  display: flex;
+}
+.container .input_checkbox .check div {
+  margin-right: 40px;
 }
