@@ -14,7 +14,14 @@ $font-g14: "Galmuri14", sans-serif !default;
   font-family: $font-g14;
 }
 
+%txt-shadow {
+  text-shadow: 1.4px 0.6px 1.3px rgba($color-black, 0.9);
+}
+
 //buttons
-%out-box-shadow {
+%out-shadow {
   box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25);
+}
+%in-shadow {
+  box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5), inset 2px 2px 0px rgba(0, 0, 0, 0.35);
 }

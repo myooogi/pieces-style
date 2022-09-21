@@ -33,9 +33,12 @@ lg - 25
 xl - 30
 */
 /*-------------------------------------------*/
+.bold-txt {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
 .container {
-  width: 100%;
-  height: 100%;
   padding: 50px 200px;
 }
 .container section {
@@ -52,7 +55,28 @@ xl - 30
 }
 .container .button .box {
   display: flex;
+  justify-content: flex-start;
 }
-.container .button .box button {
-  margin-right: 20px;
+.container .button .box .btn_box {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+}
+.container .button .box .btn_box p {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.container .button .box .btn_box button {
+  margin-bottom: 10px;
+}
+.container .input .box form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+.container .input .box form input {
+  margin-bottom: 10px;
+}
+.container .input .box form textarea {
+  margin-bottom: 10px;
 }

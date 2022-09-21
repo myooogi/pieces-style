@@ -17,30 +17,55 @@
       <section class="button">
         <h2 class="main_title">button & input : file, submit, button, reset</h2>
         <div class="box">
-          <div class="nd_btn_box">
-            <button class="default-btn"><span>1</span></button>
-            <button class="default-btn"><span>normal 상태</span></button>
-            <button class="default-btn"><span>disabled 상태</span></button>
+          <div class="btn_box">
+            <p>small</p>
+            <button class="btn-sm"><span>1</span></button>
+            <button class="btn-sm bold-txt"><span>button</span></button>
+            <button class="btn-sm"><span>normal 상태</span></button>
+            <button class="btn-sm disabled-btn"><span>disabled 상태</span></button>
           </div>
-          <div class="cd_btn_box">
-            <button class="point-btn"><span>New Style</span></button>
-            <button class="point-btn"><span>New Style</span></button>
+          <div class="btn_box">
+            <p>default</p>
+            <button><span>1</span></button>
+            <button class="bold-txt"><span>button</span></button>
+            <button><span>normal 상태</span></button>
+            <button class="disabled-btn"><span>disabled 상태</span></button>
           </div>
-          <div class="wb_btn_box">
-            <button class="default-btn"><span>New Style</span></button>
-            <button class="dark-btn"><span>New Style</span></button>
+          <div class="btn_box">
+            <p>large</p>
+            <button class="btn-lg"><span>1</span></button>
+            <button class="btn-lg bold-txt"><span>button</span></button>
+            <button class="btn-lg"><span>normal 상태</span></button>
+            <button class="btn-lg disabled-btn"><span>disabled 상태</span></button>
+          </div>
+          <div class="btn_box">
+            <p>point</p>
+            <button class="point-btn bold-txt"><span>New Style</span></button>
+            <button class="point-btn disabled-btn"><span>disable 상태</span></button>
+          </div>
+          <div class="btn_box">
+            <p>black & white</p>
+            <button class="dark-btn bold-txt"><span>New Style</span></button>
+            <button class="bold-txt"><span>New Style</span></button>
           </div>
         </div>
       </section>
       <section class="input">
         <h2 class="main_title">input : text, password, number, file, email, tel</h2>
         <div class="box">
-          <input type="text" name="" id="" placeholder="텍스트를 입력하세요." />
-          <input type="password" name="" id="" placeholder="비밀번호를 입력하세요." />
-          <input type="number" name="" id="" placeholder="번호를 입력하세요." />
-          <input type="email" name="" id="" placeholder="이메일을 입력하세요." />
-          <input type="tel" name="" id="" placeholder="전화번호를 입력하세요." />
-          <input type="file" name="" id="" />
+          <form action="">
+            <input type="text" name="" id="" placeholder="텍스트를 입력하세요." />
+            <input type="password" name="" id="" placeholder="비밀번호를 입력하세요." />
+            <input type="number" name="" id="" placeholder="번호를 입력하세요." />
+            <input type="email" name="" id="" placeholder="이메일을 입력하세요." />
+            <input type="tel" name="" id="" placeholder="전화번호를 입력하세요." />
+            <textarea name="" id="" cols="30" rows="10" placeholder="textarea 입니다."></textarea>
+            <div class="file">
+              <input class="upload" value="" placeholder="파일을 업로드 해주세요." />
+              <label for="file">파일 찾기</label>
+              <input type="file" id="file" />
+            </div>
+          </form>
         </div>
       </section>
     </div>

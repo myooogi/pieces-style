@@ -7,12 +7,29 @@
   font-family: "Galmuri9", sans-serif;
 }
 
-.btn-lg, body {
+body {
   font-family: "Galmuri11", sans-serif;
 }
 
-.dark-btn, button {
+.btn-lg {
+  font-family: "Galmuri14", sans-serif;
+}
+
+.point-btn {
+  text-shadow: 1.4px 0.6px 1.3px rgba(0, 0, 0, 0.9);
+}
+
+.file label, .btn-lg, .btn-sm, button {
   box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.file label:active, .file .upload, input[type=text],
+[type=password],
+[type=number],
+[type=email],
+[type=tel],
+textarea, .btn-lg:active, .btn-sm:active, button:active {
+  box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5), inset 2px 2px 0px rgba(0, 0, 0, 0.35);
 }
 
 /* Adorable reset CSS */
@@ -280,12 +297,29 @@ video {
   font-family: "Galmuri9", sans-serif;
 }
 
-.btn-lg, body {
+body {
   font-family: "Galmuri11", sans-serif;
 }
 
-.dark-btn, button {
+.btn-lg {
+  font-family: "Galmuri14", sans-serif;
+}
+
+.point-btn {
+  text-shadow: 1.4px 0.6px 1.3px rgba(0, 0, 0, 0.9);
+}
+
+.file label, .btn-lg, .btn-sm, button {
   box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.file label:active, .file .upload, input[type=text],
+[type=password],
+[type=number],
+[type=email],
+[type=tel],
+textarea, .btn-lg:active, .btn-sm:active, button:active {
+  box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5), inset 2px 2px 0px rgba(0, 0, 0, 0.35);
 }
 
 /*-------------------------------------------*/
@@ -314,6 +348,11 @@ lg - 25
 xl - 30
 */
 /*-------------------------------------------*/
+.bold-txt {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
 html,
 body,
 pre,
@@ -370,12 +409,29 @@ input[type=checkbox] {
   font-family: "Galmuri9", sans-serif;
 }
 
-.btn-lg, body {
+body {
   font-family: "Galmuri11", sans-serif;
 }
 
-.dark-btn, button {
+.btn-lg {
+  font-family: "Galmuri14", sans-serif;
+}
+
+.point-btn {
+  text-shadow: 1.4px 0.6px 1.3px rgba(0, 0, 0, 0.9);
+}
+
+.file label, .btn-lg, .btn-sm, button {
   box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.file label:active, .file .upload, input[type=text],
+[type=password],
+[type=number],
+[type=email],
+[type=tel],
+textarea, .btn-lg:active, .btn-sm:active, button:active {
+  box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5), inset 2px 2px 0px rgba(0, 0, 0, 0.35);
 }
 
 /*-------------------------------------------*/
@@ -404,6 +460,11 @@ lg - 25
 xl - 30
 */
 /*-------------------------------------------*/
+.bold-txt {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
 @font-face {
   font-family: "Galmuri9", "Galmuri11", "Galmuri14";
   font-weight: 700;
@@ -413,39 +474,251 @@ xl - 30
   font-family: "Galmuri9", sans-serif;
 }
 
-.btn-lg, body {
+body {
   font-family: "Galmuri11", sans-serif;
 }
 
-.dark-btn, button {
+.btn-lg {
+  font-family: "Galmuri14", sans-serif;
+}
+
+.point-btn {
+  text-shadow: 1.4px 0.6px 1.3px rgba(0, 0, 0, 0.9);
+}
+
+.file label, .btn-lg, .btn-sm, button {
   box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25);
 }
 
+.file label:active, .file .upload, input[type=text],
+[type=password],
+[type=number],
+[type=email],
+[type=tel],
+textarea, .btn-lg:active, .btn-sm:active, button:active {
+  box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5), inset 2px 2px 0px rgba(0, 0, 0, 0.35);
+}
+
 button {
-  padding: 0.8rem 1.1rem;
+  padding: 0.8rem 1rem;
   color: #000;
   background-color: #fff;
   border: 1px solid #000;
   border-radius: 3px;
 }
-
-.point-btn {
-  font-weight: 700;
+button:hover {
+  position: relative;
 }
-
-.dark-btn {
-  padding: 0.8rem 1rem;
-  color: #fff;
-  background-color: #000;
-  border: 1px solid #000;
-  border-radius: 3px;
+button:hover:after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+button:focus {
+  outline: 0;
+}
+button:focus-visible {
+  outline: 1px solid #000;
 }
 
 /* btn- size */
 .btn-sm {
   font-size: 0.625rem;
+  padding: 0.4rem 0.6rem 0.5rem 0.6rem;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+.btn-sm:hover {
+  position: relative;
+}
+.btn-sm:hover:after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.btn-sm:focus {
+  outline: 0;
+}
+.btn-sm:focus-visible {
+  outline: 1px solid #000;
 }
 
 .btn-lg {
-  font-size: 1rem;
+  font-size: 1.125rem;
+  padding: 1rem 1.2rem;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+.btn-lg:hover {
+  position: relative;
+}
+.btn-lg:hover:after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.btn-lg:focus {
+  outline: 0;
+}
+.btn-lg:focus-visible {
+  outline: 1px solid #000;
+}
+
+/* btn- style */
+.point-btn {
+  color: #fff;
+  background-color: #6d57f1;
+  border: 1px solid #000;
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.35);
+}
+
+.dark-btn {
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #fff;
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.6);
+}
+
+.disabled-btn {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.disabled-btn:hover:after {
+  display: none;
+}
+
+@font-face {
+  font-family: "Galmuri9", "Galmuri11", "Galmuri14";
+  font-weight: 700;
+  src: url(../../fonts/Galmuri9.woff2) format("woff2"), url(../../fonts/Galmuri11.woff2) format("woff2"), url(../../fonts/Galmuri11-Bold.woff2) format("woff2"), url(../../fonts/Galmuri14.woff2) format("woff2");
+}
+.btn-sm {
+  font-family: "Galmuri9", sans-serif;
+}
+
+body {
+  font-family: "Galmuri11", sans-serif;
+}
+
+.btn-lg {
+  font-family: "Galmuri14", sans-serif;
+}
+
+.point-btn {
+  text-shadow: 1.4px 0.6px 1.3px rgba(0, 0, 0, 0.9);
+}
+
+.file label, button, .btn-sm, .btn-lg {
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.file label:active, .file .upload, input[type=text],
+[type=password],
+[type=number],
+[type=email],
+[type=tel],
+textarea, button:active, .btn-sm:active, .btn-lg:active {
+  box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5), inset 2px 2px 0px rgba(0, 0, 0, 0.35);
+}
+
+input[type=text],
+[type=password],
+[type=number],
+[type=email],
+[type=tel],
+textarea {
+  padding: 0.8rem 1rem;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+input[type=text]:focus,
+[type=password]:focus,
+[type=number]:focus,
+[type=email]:focus,
+[type=tel]:focus,
+textarea:focus {
+  outline: 0;
+}
+input[type=text]:focus-visible,
+[type=password]:focus-visible,
+[type=number]:focus-visible,
+[type=email]:focus-visible,
+[type=tel]:focus-visible,
+textarea:focus-visible {
+  outline: 1px solid #000;
+}
+
+input[type=file] {
+  position: absolute;
+  width: 0;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+}
+
+textarea {
+  line-height: 1.6;
+}
+
+/*type=file*/
+.file .upload {
+  padding: 0.8rem 1rem;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+.file .upload:focus {
+  outline: 0;
+}
+.file .upload:focus-visible {
+  outline: 1px solid #000;
+}
+.file label {
+  padding: 0.8rem 1rem;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+.file label:hover {
+  position: relative;
+}
+.file label:hover:after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.file label:focus {
+  outline: 0;
+}
+.file label:focus-visible {
+  outline: 1px solid #000;
 }

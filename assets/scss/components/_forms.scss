@@ -1,1 +1,52 @@
 @charset "utf-8";
+
+@import "../abstracts/variables";
+@import "../abstracts/placeholders";
+@import "../abstracts/mixins";
+@import "../abstracts/functions";
+
+@mixin input-style($padding: 0.8rem 1rem, $color: $color-black, $bg: $color-white, $border: 1px solid $color-black, $radius: 3px) {
+  padding: $padding;
+  color: $color;
+  background-color: $bg;
+  border: $border;
+  border-radius: $radius;
+  @extend %in-shadow;
+
+  &:focus {
+    outline: 0;
+  }
+  &:focus-visible {
+    outline: 1px solid $color-black;
+  }
+}
+
+input[type="text"],
+[type="password"],
+[type="number"],
+[type="email"],
+[type="tel"],
+textarea {
+  @include input-style;
+}
+input[type="file"] {
+  position: absolute;
+  width: 0;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+}
+textarea {
+  line-height: 1.6;
+}
+
+/*type=file*/
+.file {
+  .upload {
+    @include input-style;
+  }
+  label {
+    @include btn-style;
+  }
+}
