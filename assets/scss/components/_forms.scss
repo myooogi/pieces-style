@@ -80,8 +80,28 @@ input[type="radio"] {
 }
 
 // select
-select {
-  @include btn-style(0.8rem 3.5rem 0.8rem 1rem);
+.select {
   position: relative;
-  appearance: none;
+  display: inline-flex;
+  &:after {
+    @include pseudo;
+    @include icon("arrow_drop_down", 0);
+    @include absCenter(false, true);
+    font-size: 17px;
+    top: 49%;
+    right: 10px;
+  }
+  select {
+    @include btn-style(0.8rem 3.5rem 0.8rem 1rem);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    option {
+      background-color: $color-black;
+      color: $color-white;
+    }
+  }
+}
+
+.select-btn {
 }

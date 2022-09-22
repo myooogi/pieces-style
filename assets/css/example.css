@@ -8,31 +8,6 @@
 }
 
 /*-------------------------------------------*/
-/*
-galmuri9
-xs - 10
-sm - 14
-base - 16
-lg - 20
-xl - 30
-*/
-/*
-galmuri11 (bold)
-xs - 12
-sm - 14
-base - 16
-lg - 20
-xl - 24
-*/
-/*
-galmuri14
-xs - 15
-sm - 18
-base - 22
-lg - 25
-xl - 30
-*/
-/*-------------------------------------------*/
 .bold-txt {
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -91,4 +66,11 @@ xl - 30
 }
 .container .input_checkbox .check div {
   margin-right: 40px;
+}
+.container .select_box .box {
+  display: flex;
+  align-items: center;
+}
+.container .select_box .box div {
+  margin-right: 50px;
 }

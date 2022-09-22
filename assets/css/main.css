@@ -19,11 +19,11 @@ body {
   text-shadow: 1.4px 0.6px 1.3px rgba(0, 0, 0, 0.9);
 }
 
-select, .file label, .btn-lg, .btn-sm, button {
+.select select, .file label, .btn-lg, .btn-sm, button {
   box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25);
 }
 
-select:active, .checkbox input:checked ~ span:before, .file label:active, .file .upload, input[type=text],
+.select select:active, .checkbox input:checked ~ span:before, .file label:active, .file .upload, input[type=text],
 [type=password],
 [type=number],
 [type=email],
@@ -40,7 +40,6 @@ textarea, .btn-lg:active, .btn-sm:active, button:active {
   outline: none;
 }
 
-/* Adorable reset CSS */
 * {
   margin: 0;
   padding: 0;
@@ -82,7 +81,6 @@ table {
   border-spacing: 0;
 }
 
-/* tailwind reset CSS */
 *,
 ::before,
 ::after {
@@ -317,11 +315,11 @@ body {
   text-shadow: 1.4px 0.6px 1.3px rgba(0, 0, 0, 0.9);
 }
 
-select, .file label, .btn-lg, .btn-sm, button {
+.select select, .file label, .btn-lg, .btn-sm, button {
   box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25);
 }
 
-select:active, .checkbox input:checked ~ span:before, .file label:active, .file .upload, input[type=text],
+.select select:active, .checkbox input:checked ~ span:before, .file label:active, .file .upload, input[type=text],
 [type=password],
 [type=number],
 [type=email],
@@ -338,31 +336,6 @@ textarea, .btn-lg:active, .btn-sm:active, button:active {
   outline: none;
 }
 
-/*-------------------------------------------*/
-/*
-galmuri9
-xs - 10
-sm - 14
-base - 16
-lg - 20
-xl - 30
-*/
-/*
-galmuri11 (bold)
-xs - 12
-sm - 14
-base - 16
-lg - 20
-xl - 24
-*/
-/*
-galmuri14
-xs - 15
-sm - 18
-base - 22
-lg - 25
-xl - 30
-*/
 /*-------------------------------------------*/
 .bold-txt {
   font-weight: 700;
@@ -437,11 +410,11 @@ body {
   text-shadow: 1.4px 0.6px 1.3px rgba(0, 0, 0, 0.9);
 }
 
-select, .file label, .btn-lg, .btn-sm, button {
+.select select, .file label, .btn-lg, .btn-sm, button {
   box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25);
 }
 
-select:active, .checkbox input:checked ~ span:before, .file label:active, .file .upload, input[type=text],
+.select select:active, .checkbox input:checked ~ span:before, .file label:active, .file .upload, input[type=text],
 [type=password],
 [type=number],
 [type=email],
@@ -458,31 +431,6 @@ textarea, .btn-lg:active, .btn-sm:active, button:active {
   outline: none;
 }
 
-/*-------------------------------------------*/
-/*
-galmuri9
-xs - 10
-sm - 14
-base - 16
-lg - 20
-xl - 30
-*/
-/*
-galmuri11 (bold)
-xs - 12
-sm - 14
-base - 16
-lg - 20
-xl - 24
-*/
-/*
-galmuri14
-xs - 15
-sm - 18
-base - 22
-lg - 25
-xl - 30
-*/
 /*-------------------------------------------*/
 .bold-txt {
   font-weight: 700;
@@ -510,11 +458,11 @@ body {
   text-shadow: 1.4px 0.6px 1.3px rgba(0, 0, 0, 0.9);
 }
 
-select, .file label, .btn-lg, .btn-sm, button {
+.select select, .file label, .btn-lg, .btn-sm, button {
   box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25);
 }
 
-select:active, .checkbox input:checked ~ span:before, .file label:active, .file .upload, input[type=text],
+.select select:active, .checkbox input:checked ~ span:before, .file label:active, .file .upload, input[type=text],
 [type=password],
 [type=number],
 [type=email],
@@ -552,7 +500,6 @@ button span:focus-visible {
   outline: none;
 }
 
-/* btn- size */
 .btn-sm {
   font-size: 0.625rem;
   display: flex;
@@ -591,7 +538,6 @@ button span:focus-visible {
   outline: 1px solid #000;
 }
 
-/* btn- style */
 .point-btn {
   color: #fff;
   background-color: #6d57f1;
@@ -632,11 +578,11 @@ body {
   text-shadow: 1.4px 0.6px 1.3px rgba(0, 0, 0, 0.9);
 }
 
-select, .file label, button, .btn-sm, .btn-lg {
+.select select, .file label, button, .btn-sm, .btn-lg {
   box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25);
 }
 
-select:active, .checkbox input:checked ~ span:before, .file label:active, .file .upload, input[type=text],
+.select select:active, .checkbox input:checked ~ span:before, .file label:active, .file .upload, input[type=text],
 [type=password],
 [type=number],
 [type=email],
@@ -820,7 +766,26 @@ input[type=radio]:disabled + span {
   cursor: not-allowed;
 }
 
-select {
+.select {
+  position: relative;
+  display: inline-flex;
+}
+.select:after {
+  display: block;
+  position: absolute;
+  content: "";
+  font-family: "Material Icons";
+  content: "arrow_drop_down";
+  display: inline-block;
+  margin-left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 17px;
+  top: 49%;
+  right: 10px;
+}
+.select select {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -830,12 +795,101 @@ select {
   background-color: #fff;
   border: 1px solid #000;
   border-radius: 3px;
-  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
 }
-select:focus {
+.select select:focus {
   outline: 0;
 }
-select:focus-visible {
+.select select:focus-visible {
   outline: 1px solid #000;
+}
+.select select option {
+  background-color: #000;
+  color: #fff;
+}
+
+@font-face {
+  font-family: "Galmuri9", "Galmuri11", "Galmuri14";
+  font-weight: 700;
+  src: url(../../fonts/Galmuri9.woff2) format("woff2"), url(../../fonts/Galmuri11.woff2) format("woff2"), url(../../fonts/Galmuri11-Bold.woff2) format("woff2"), url(../../fonts/Galmuri14.woff2) format("woff2");
+}
+.btn-sm {
+  font-family: "Galmuri9", sans-serif;
+}
+
+body {
+  font-family: "Galmuri11", sans-serif;
+}
+
+.btn-lg {
+  font-family: "Galmuri14", sans-serif;
+}
+
+.point-btn {
+  text-shadow: 1.4px 0.6px 1.3px rgba(0, 0, 0, 0.9);
+}
+
+button, .btn-sm, .btn-lg, .file label, .select select {
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25);
+}
+
+button:active, .btn-sm:active, .btn-lg:active, input[type=text],
+[type=password],
+[type=number],
+[type=email],
+[type=tel],
+textarea, .file .upload, .file label:active, .checkbox input:checked ~ span:before, .select select:active {
+  box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5), inset 2px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+.checkbox span:before {
+  box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5), inset -1.7px -1.7px 0px rgba(0, 0, 0, 0.25);
+}
+
+.label:focus-visible, .label span:focus-visible {
+  outline: none;
+}
+
+@font-face {
+  font-family: "Galmuri9", "Galmuri11", "Galmuri14";
+  font-weight: 700;
+  src: url(../../fonts/Galmuri9.woff2) format("woff2"), url(../../fonts/Galmuri11.woff2) format("woff2"), url(../../fonts/Galmuri11-Bold.woff2) format("woff2"), url(../../fonts/Galmuri14.woff2) format("woff2");
+}
+.btn-sm {
+  font-family: "Galmuri9", sans-serif;
+}
+
+body {
+  font-family: "Galmuri11", sans-serif;
+}
+
+.btn-lg {
+  font-family: "Galmuri14", sans-serif;
+}
+
+.point-btn {
+  text-shadow: 1.4px 0.6px 1.3px rgba(0, 0, 0, 0.9);
+}
+
+button, .btn-sm, .btn-lg, .file label, .select select {
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25);
+}
+
+button:active, .btn-sm:active, .btn-lg:active, input[type=text],
+[type=password],
+[type=number],
+[type=email],
+[type=tel],
+textarea, .file .upload, .file label:active, .checkbox input:checked ~ span:before, .select select:active {
+  box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5), inset 2px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+.checkbox span:before {
+  box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5), inset -1.7px -1.7px 0px rgba(0, 0, 0, 0.25);
+}
+
+.label:focus-visible, .label span:focus-visible {
+  outline: none;
 }

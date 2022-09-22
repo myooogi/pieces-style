@@ -41,7 +41,7 @@
   height: $h;
   background-color: $bg;
 }
-@mixin icon($code, $margin: 10px) {
+@mixin icon($code, $margin: 0) {
   font-family: "Material Icons";
   content: $code;
   display: inline-block;
@@ -175,3 +175,6 @@
   border-radius: $radius;
   @extend %check-shadow;
 }
+
+////////////////////////////////////////////////////////////////////////////////////
+//popup

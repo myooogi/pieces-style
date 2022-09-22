@@ -68,4 +68,13 @@
       }
     }
   }
+  .select_box {
+    .box {
+      display: flex;
+      align-items: center;
+      div {
+        margin-right: 50px;
+      }
+    }
+  }
 }
