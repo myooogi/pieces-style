@@ -3,11 +3,11 @@
   font-weight: 700;
   src: url(../../fonts/Galmuri9.woff2) format("woff2"), url(../../fonts/Galmuri11.woff2) format("woff2"), url(../../fonts/Galmuri11-Bold.woff2) format("woff2"), url(../../fonts/Galmuri14.woff2) format("woff2");
 }
-.btn-sm {
+.badge, .btn-sm {
   font-family: "Galmuri9", sans-serif;
 }
 
-body {
+.popup .desc .title, body {
   font-family: "Galmuri11", sans-serif;
 }
 
@@ -19,11 +19,11 @@ body {
   text-shadow: 1.4px 0.6px 1.3px rgba(0, 0, 0, 0.9);
 }
 
-.select select, .file label, .btn-lg, .btn-sm, button {
+.popup, .select-box .option-list, .select-box .select-btn, .select select, .file label, .btn-lg, .btn-sm, button {
   box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25);
 }
 
-.select select:active, .checkbox input:checked ~ span:before, .file label:active, .file .upload, input[type=text],
+.select-box .select-btn:active, .select select:active, .checkbox input:checked ~ span:before, .file label:active, .file .upload, input[type=text],
 [type=password],
 [type=number],
 [type=email],
@@ -36,7 +36,7 @@ textarea, .btn-lg:active, .btn-sm:active, button:active {
   box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5), inset -1.7px -1.7px 0px rgba(0, 0, 0, 0.25);
 }
 
-.label span:focus-visible, .label:focus-visible {
+.select-box .option-list li:focus-visible, .label span:focus-visible, .label:focus-visible {
   outline: none;
 }
 
@@ -299,11 +299,11 @@ video {
   display: none;
 }
 
-.btn-sm {
+.badge, .btn-sm {
   font-family: "Galmuri9", sans-serif;
 }
 
-body {
+.popup .desc .title, body {
   font-family: "Galmuri11", sans-serif;
 }
 
@@ -315,11 +315,11 @@ body {
   text-shadow: 1.4px 0.6px 1.3px rgba(0, 0, 0, 0.9);
 }
 
-.select select, .file label, .btn-lg, .btn-sm, button {
+.popup, .select-box .option-list, .select-box .select-btn, .select select, .file label, .btn-lg, .btn-sm, button {
   box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25);
 }
 
-.select select:active, .checkbox input:checked ~ span:before, .file label:active, .file .upload, input[type=text],
+.select-box .select-btn:active, .select select:active, .checkbox input:checked ~ span:before, .file label:active, .file .upload, input[type=text],
 [type=password],
 [type=number],
 [type=email],
@@ -332,16 +332,11 @@ textarea, .btn-lg:active, .btn-sm:active, button:active {
   box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5), inset -1.7px -1.7px 0px rgba(0, 0, 0, 0.25);
 }
 
-.label span:focus-visible, .label:focus-visible {
+.select-box .option-list li:focus-visible, .label span:focus-visible, .label:focus-visible {
   outline: none;
 }
 
 /*-------------------------------------------*/
-.bold-txt {
-  font-weight: 700;
-  letter-spacing: 0.5px;
-}
-
 html,
 body,
 pre,
@@ -394,11 +389,11 @@ input[type=checkbox] {
   border-right: 1px solid #000;
 }
 
-.btn-sm {
+.badge, .btn-sm {
   font-family: "Galmuri9", sans-serif;
 }
 
-body {
+.popup .desc .title, body {
   font-family: "Galmuri11", sans-serif;
 }
 
@@ -410,11 +405,11 @@ body {
   text-shadow: 1.4px 0.6px 1.3px rgba(0, 0, 0, 0.9);
 }
 
-.select select, .file label, .btn-lg, .btn-sm, button {
+.popup, .select-box .option-list, .select-box .select-btn, .select select, .file label, .btn-lg, .btn-sm, button {
   box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25);
 }
 
-.select select:active, .checkbox input:checked ~ span:before, .file label:active, .file .upload, input[type=text],
+.select-box .select-btn:active, .select select:active, .checkbox input:checked ~ span:before, .file label:active, .file .upload, input[type=text],
 [type=password],
 [type=number],
 [type=email],
@@ -427,26 +422,21 @@ textarea, .btn-lg:active, .btn-sm:active, button:active {
   box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5), inset -1.7px -1.7px 0px rgba(0, 0, 0, 0.25);
 }
 
-.label span:focus-visible, .label:focus-visible {
+.select-box .option-list li:focus-visible, .label span:focus-visible, .label:focus-visible {
   outline: none;
 }
 
 /*-------------------------------------------*/
-.bold-txt {
-  font-weight: 700;
-  letter-spacing: 0.5px;
-}
-
 @font-face {
   font-family: "Galmuri9", "Galmuri11", "Galmuri14";
   font-weight: 700;
   src: url(../../fonts/Galmuri9.woff2) format("woff2"), url(../../fonts/Galmuri11.woff2) format("woff2"), url(../../fonts/Galmuri11-Bold.woff2) format("woff2"), url(../../fonts/Galmuri14.woff2) format("woff2");
 }
-.btn-sm {
+.badge, .btn-sm {
   font-family: "Galmuri9", sans-serif;
 }
 
-body {
+.popup .desc .title, body {
   font-family: "Galmuri11", sans-serif;
 }
 
@@ -458,11 +448,11 @@ body {
   text-shadow: 1.4px 0.6px 1.3px rgba(0, 0, 0, 0.9);
 }
 
-.select select, .file label, .btn-lg, .btn-sm, button {
+.popup, .select-box .option-list, .select-box .select-btn, .select select, .file label, .btn-lg, .btn-sm, button {
   box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25);
 }
 
-.select select:active, .checkbox input:checked ~ span:before, .file label:active, .file .upload, input[type=text],
+.select-box .select-btn:active, .select select:active, .checkbox input:checked ~ span:before, .file label:active, .file .upload, input[type=text],
 [type=password],
 [type=number],
 [type=email],
@@ -475,7 +465,7 @@ textarea, .btn-lg:active, .btn-sm:active, button:active {
   box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5), inset -1.7px -1.7px 0px rgba(0, 0, 0, 0.25);
 }
 
-.label span:focus-visible, .label:focus-visible {
+.select-box .option-list li:focus-visible, .label span:focus-visible, .label:focus-visible {
   outline: none;
 }
 
@@ -554,7 +544,12 @@ button span:focus-visible {
 
 .disabled-btn {
   opacity: 0.6;
-  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.bold-txt {
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
 @font-face {
@@ -562,11 +557,11 @@ button span:focus-visible {
   font-weight: 700;
   src: url(../../fonts/Galmuri9.woff2) format("woff2"), url(../../fonts/Galmuri11.woff2) format("woff2"), url(../../fonts/Galmuri11-Bold.woff2) format("woff2"), url(../../fonts/Galmuri14.woff2) format("woff2");
 }
-.btn-sm {
+.badge, .btn-sm {
   font-family: "Galmuri9", sans-serif;
 }
 
-body {
+.popup .desc .title, body {
   font-family: "Galmuri11", sans-serif;
 }
 
@@ -578,11 +573,11 @@ body {
   text-shadow: 1.4px 0.6px 1.3px rgba(0, 0, 0, 0.9);
 }
 
-.select select, .file label, button, .btn-sm, .btn-lg {
+.popup, .select-box .option-list, .select-box .select-btn, .select select, .file label, button, .btn-sm, .btn-lg {
   box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25);
 }
 
-.select select:active, .checkbox input:checked ~ span:before, .file label:active, .file .upload, input[type=text],
+.select-box .select-btn:active, .select select:active, .checkbox input:checked ~ span:before, .file label:active, .file .upload, input[type=text],
 [type=password],
 [type=number],
 [type=email],
@@ -595,7 +590,7 @@ textarea, button:active, .btn-sm:active, .btn-lg:active {
   box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5), inset -1.7px -1.7px 0px rgba(0, 0, 0, 0.25);
 }
 
-.label span:focus-visible, .label:focus-visible {
+.select-box .option-list li:focus-visible, .label span:focus-visible, .label:focus-visible {
   outline: none;
 }
 
@@ -768,7 +763,6 @@ input[type=radio]:disabled + span {
 
 .select {
   position: relative;
-  display: inline-flex;
 }
 .select:after {
   display: block;
@@ -798,6 +792,7 @@ input[type=radio]:disabled + span {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  cursor: pointer;
 }
 .select select:focus {
   outline: 0;
@@ -810,16 +805,85 @@ input[type=radio]:disabled + span {
   color: #fff;
 }
 
+.select-box {
+  position: relative;
+}
+.select-box .select-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 0.8rem 3.5rem 0.8rem 1rem;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 3px;
+  position: relative;
+}
+.select-box .select-btn:focus {
+  outline: 0;
+}
+.select-box .select-btn:focus-visible {
+  outline: 1px solid #000;
+}
+.select-box .select-btn:after {
+  display: block;
+  position: absolute;
+  content: "";
+  font-family: "Material Icons";
+  content: "arrow_drop_down";
+  display: inline-block;
+  margin-left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 17px;
+  top: 49%;
+  right: 10px;
+}
+.select-box .option-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 0.8rem 0.5rem;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 0 0 3px 3px;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  width: 100%;
+  margin-top: -2px;
+}
+.select-box .option-list:focus {
+  outline: 0;
+}
+.select-box .option-list:focus-visible {
+  outline: 1px solid #000;
+}
+.select-box .option-list li {
+  padding: 0.5rem;
+  width: 100%;
+  cursor: pointer;
+}
+.select-box .option-list li:hover {
+  background-color: #000;
+  color: #fff;
+  border-radius: 3px;
+}
+
 @font-face {
   font-family: "Galmuri9", "Galmuri11", "Galmuri14";
   font-weight: 700;
   src: url(../../fonts/Galmuri9.woff2) format("woff2"), url(../../fonts/Galmuri11.woff2) format("woff2"), url(../../fonts/Galmuri11-Bold.woff2) format("woff2"), url(../../fonts/Galmuri14.woff2) format("woff2");
 }
-.btn-sm {
+.badge, .btn-sm {
   font-family: "Galmuri9", sans-serif;
 }
 
-body {
+.popup .desc .title, body {
   font-family: "Galmuri11", sans-serif;
 }
 
@@ -831,7 +895,7 @@ body {
   text-shadow: 1.4px 0.6px 1.3px rgba(0, 0, 0, 0.9);
 }
 
-button, .btn-sm, .btn-lg, .file label, .select select {
+.popup, button, .btn-sm, .btn-lg, .file label, .select select, .select-box .select-btn, .select-box .option-list {
   box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -840,7 +904,7 @@ button:active, .btn-sm:active, .btn-lg:active, input[type=text],
 [type=number],
 [type=email],
 [type=tel],
-textarea, .file .upload, .file label:active, .checkbox input:checked ~ span:before, .select select:active {
+textarea, .file .upload, .file label:active, .checkbox input:checked ~ span:before, .select select:active, .select-box .select-btn:active {
   box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5), inset 2px 2px 0px rgba(0, 0, 0, 0.3);
 }
 
@@ -848,8 +912,46 @@ textarea, .file .upload, .file label:active, .checkbox input:checked ~ span:befo
   box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5), inset -1.7px -1.7px 0px rgba(0, 0, 0, 0.25);
 }
 
-.label:focus-visible, .label span:focus-visible {
+.label:focus-visible, .label span:focus-visible, .select-box .option-list li:focus-visible {
   outline: none;
+}
+
+.popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 0.8rem 1rem;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 3px;
+  flex-direction: column;
+}
+.popup:focus {
+  outline: 0;
+}
+.popup:focus-visible {
+  outline: 1px solid #000;
+}
+.popup .desc {
+  text-align: center;
+}
+.popup .desc .title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: inherit;
+  margin: 1.2rem 0;
+}
+.popup .desc .texts {
+  margin: 1.5rem 0;
+}
+.popup .btn-box {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.popup .btn-box .bold-txt {
+  margin-left: 1rem;
 }
 
 @font-face {
@@ -857,11 +959,11 @@ textarea, .file .upload, .file label:active, .checkbox input:checked ~ span:befo
   font-weight: 700;
   src: url(../../fonts/Galmuri9.woff2) format("woff2"), url(../../fonts/Galmuri11.woff2) format("woff2"), url(../../fonts/Galmuri11-Bold.woff2) format("woff2"), url(../../fonts/Galmuri14.woff2) format("woff2");
 }
-.btn-sm {
+.badge, .btn-sm {
   font-family: "Galmuri9", sans-serif;
 }
 
-body {
+body, .popup .desc .title {
   font-family: "Galmuri11", sans-serif;
 }
 
@@ -873,7 +975,7 @@ body {
   text-shadow: 1.4px 0.6px 1.3px rgba(0, 0, 0, 0.9);
 }
 
-button, .btn-sm, .btn-lg, .file label, .select select {
+button, .btn-sm, .btn-lg, .file label, .select select, .select-box .select-btn, .select-box .option-list, .popup {
   box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -882,7 +984,7 @@ button:active, .btn-sm:active, .btn-lg:active, input[type=text],
 [type=number],
 [type=email],
 [type=tel],
-textarea, .file .upload, .file label:active, .checkbox input:checked ~ span:before, .select select:active {
+textarea, .file .upload, .file label:active, .checkbox input:checked ~ span:before, .select select:active, .select-box .select-btn:active {
   box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5), inset 2px 2px 0px rgba(0, 0, 0, 0.3);
 }
 
@@ -890,6 +992,94 @@ textarea, .file .upload, .file label:active, .checkbox input:checked ~ span:befo
   box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5), inset -1.7px -1.7px 0px rgba(0, 0, 0, 0.25);
 }
 
-.label:focus-visible, .label span:focus-visible {
+.label:focus-visible, .label span:focus-visible, .select-box .option-list li:focus-visible {
   outline: none;
+}
+
+.left-msg {
+  padding: 0.8rem 1rem;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 3px;
+  line-height: 1.8;
+  position: relative;
+  z-index: 10;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.4);
+}
+.left-msg:before {
+  display: block;
+  position: absolute;
+  content: "";
+  border-right: 10px solid transparent;
+  border-top: 10px solid #000;
+  bottom: -10px;
+  left: 30px;
+}
+.left-msg:after {
+  display: block;
+  position: absolute;
+  content: "";
+  border-right: 8px solid transparent;
+  border-top: 8px solid #fff;
+  bottom: -8px;
+  left: 31px;
+}
+
+.right-msg {
+  padding: 0.8rem 1rem;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 3px;
+  line-height: 1.8;
+  position: relative;
+  z-index: 10;
+  box-shadow: -2px 2px 0 rgba(0, 0, 0, 0.4);
+}
+.right-msg:before {
+  display: block;
+  position: absolute;
+  content: "";
+  border-left: 10px solid transparent;
+  border-top: 10px solid #000;
+  bottom: -10px;
+  right: 30px;
+}
+.right-msg:after {
+  display: block;
+  position: absolute;
+  content: "";
+  border-left: 8px solid transparent;
+  border-top: 8px solid #fff;
+  bottom: -8px;
+  right: 31px;
+}
+
+progress {
+  appearance: none;
+}
+
+.progress::-webkit-progress-bar {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 20px;
+  padding: 0.1rem;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.progress::-webkit-progress-value {
+  background-color: #6d57f1;
+  border-radius: 10px 0 0 10px;
+}
+
+.badge {
+  padding: 0.3rem 0.2rem;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 3px;
+  font-size: 0.625rem;
 }

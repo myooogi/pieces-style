@@ -92,7 +92,7 @@ $font-family: "Galmuri9", "Galmuri11", "Galmuri14", -apple-system, BlinkMacSyste
 
 /*-------------------------------------------*/
 
-.bold-txt {
-  font-weight: 700;
-  letter-spacing: 0.5px;
+@mixin bold-txt($bold: 700, $space: inherit) {
+  font-weight: $bold;
+  letter-spacing: $space;
 }

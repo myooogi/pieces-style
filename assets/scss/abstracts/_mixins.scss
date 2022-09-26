@@ -62,18 +62,6 @@
   background-color: $bg;
 }
 
-@mixin triangle-icon {
-  @include pseudo;
-  box-sizing: border-box;
-  width: 0;
-  height: 10px;
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-  border-left: 6px solid;
-  top: 6px;
-  left: 9px;
-}
-
 ////////////////////////////////////////////////////////////////////////////////////
 ///buttons
 
@@ -107,6 +95,11 @@
   border: $border;
 }
 
+@mixin disable-btn-style($opacity: 0.6) {
+  opacity: $opacity;
+  pointer-events: none;
+}
+
 ////////////////////////////////////////////////////////////////////////////////////
 //forms
 
@@ -126,6 +119,7 @@
     outline: 1px solid $color-black;
   }
 }
+
 //radio
 @mixin radio-style($padding: 0.5rem 0.9rem, $border: 1px dashed $color-black, $margin: 10px) {
   padding: $padding;
@@ -159,6 +153,7 @@
     cursor: not-allowed;
   }
 }
+
 //checkbox
 @mixin check-style($w: 15px, $h: 15px, $margin: 10px, $border: 1px solid $color-black, $color: $color-black, $bg: $color-white, $radius: 3px) {
   content: "";
@@ -178,3 +173,90 @@
 
 ////////////////////////////////////////////////////////////////////////////////////
 //popup
+
+@mixin box-style($padding: 0.8rem 1rem, $color: $color-black, $bg: $color-white, $border: 1px solid $color-black, $radius: 3px) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: $padding;
+  color: $color;
+  background-color: $bg;
+  border: $border;
+  border-radius: $radius;
+  @extend %out-shadow;
+
+  &:focus {
+    outline: 0;
+  }
+  &:focus-visible {
+    outline: 1px solid $color-black;
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////////
+//balloon
+
+@mixin msg-box-style($padding: 0.8rem 1rem, $color: $color-black, $bg: $color-white, $border: 1px solid $color-black, $radius: 3px, $line-h: 1.8) {
+  padding: $padding;
+  color: $color;
+  background-color: $bg;
+  border: $border;
+  border-radius: $radius;
+  line-height: $line-h;
+}
+
+@mixin left-msg-box-style {
+  @include msg-box-style;
+  position: relative;
+  z-index: 10;
+  box-shadow: 2px 2px 0 rgba($color-black, 0.4);
+
+  &:before {
+    @include pseudo;
+    border-right: 10px solid transparent;
+    border-top: 10px solid $color-black;
+    bottom: -10px;
+    left: 30px;
+  }
+  &:after {
+    @include pseudo;
+    border-right: 8px solid transparent;
+    border-top: 8px solid $color-white;
+    bottom: -8px;
+    left: 31px;
+  }
+}
+
+@mixin right-msg-box-style {
+  @include msg-box-style;
+  position: relative;
+  z-index: 10;
+  box-shadow: -2px 2px 0 rgba($color-black, 0.4);
+
+  &:before {
+    @include pseudo;
+    border-left: 10px solid transparent;
+    border-top: 10px solid $color-black;
+    bottom: -10px;
+    right: 30px;
+  }
+  &:after {
+    @include pseudo;
+    border-left: 8px solid transparent;
+    border-top: 8px solid $color-white;
+    bottom: -8px;
+    right: 31px;
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////////
+//badges
+
+@mixin badge($padding: 0.3rem 0.2rem, $color: $color-black, $bg: $color-white, $border: 1px solid $color-black, $radius: 3px) {
+  padding: $padding;
+  color: $color;
+  background-color: $bg;
+  border: $border;
+  border-radius: $radius;
+}

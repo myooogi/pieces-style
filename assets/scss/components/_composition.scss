@@ -4,3 +4,38 @@
 @import "../abstracts/placeholders";
 @import "../abstracts/mixins";
 @import "../abstracts/functions";
+
+//balloon
+.left-msg {
+  @include left-msg-box-style;
+}
+.right-msg {
+  @include right-msg-box-style;
+}
+
+//progress
+progress {
+  appearance: none;
+}
+.progress {
+  &::-webkit-progress-bar {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 20px;
+    padding: 0.1rem;
+    border: 1px solid $color-black;
+    border-radius: 10px;
+    background-color: $color-white;
+  }
+  &::-webkit-progress-value {
+    background-color: $color-02;
+    border-radius: 10px 0 0 10px;
+  }
+}
+
+//badges
+.badge {
+  @include badge;
+  @include g9-xs;
+}

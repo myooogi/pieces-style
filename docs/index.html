@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Style Example</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="../assets/css/main.min.css" />
     <link rel="stylesheet" href="../assets/css/example.min.css" />
@@ -121,15 +123,15 @@
               <option value="대구광역시">대구광역시</option>
             </select>
           </div>
-          <div class="select-btn">
-            <!-- <button><span>지역을 선택하세요.</span></button>
+          <div class="select-box">
+            <button class="select-btn"><span>지역을 선택하세요.</span></button>
             <ul class="option-list">
               <li><span>서울특별시</span></li>
               <li><span>인천광역시</span></li>
               <li><span>광주광역시</span></li>
               <li><span>부산광역시</span></li>
               <li><span>대구광역시</span></li>
-            </ul> -->
+            </ul>
           </div>
         </div>
       </section>
@@ -138,14 +140,51 @@
         <div class="box">
           <div class="popup">
             <div class="desc">
-              <h3>Popup!</h3>
-              <p>Alert : this is a dialog!</p>
+              <h3 class="title">Popup!</h3>
+              <p class="texts">Alert : this is a dialog!</p>
             </div>
             <div class="btn-box">
               <button>CLOSE</button>
-              <button>NEXT</button>
+              <button class="point-btn bold-txt">NEXT</button>
             </div>
           </div>
+        </div>
+      </section>
+      <section class="balloons">
+        <h2 class="main_title">balloon</h2>
+        <div class="box">
+          <div class="left-msg">
+            <div class="txt">♬ f(x) - Glitter ♬</div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="right-msg">
+            <div class="txt">
+              밤하늘 위 빛이 휘어진 순간<br />
+              문득 너울진 별이 충돌한 그 밤<br />
+              불꽃놀이처럼 반짝 내리던<br />
+              금색 섬광 속 널 발견해낸 걸
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="progress-box">
+        <h2 class="main_title">progress</h2>
+        <div class="box">
+          <progress class="progress" value="70" min="0" max="100"></progress>
+        </div>
+      </section>
+      <section class="badges">
+        <h2 class="main_title">badges</h2>
+        <div class="box">
+          <div class="badge primary"><span>Primary</span></div>
+          <div class="badge secondary"><span>Secondary</span></div>
+          <div class="badge success"><span>Success</span></div>
+          <div class="badge danger"><span>Danger</span></div>
+          <div class="badge warning"><span>Warning</span></div>
+          <div class="badge info"><span>Info</span></div>
+          <div class="badge light"><span>Light</span></div>
+          <div class="badge dark"><span>dark</span></div>
         </div>
       </section>
     </div>

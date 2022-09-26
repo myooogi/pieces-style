@@ -4,3 +4,26 @@
 @import "../abstracts/placeholders";
 @import "../abstracts/mixins";
 @import "../abstracts/functions";
+
+.popup {
+  @include box-style;
+  flex-direction: column;
+  .desc {
+    text-align: center;
+    .title {
+      @include g11-xl;
+      @include bold-txt;
+      margin: 1.2rem 0;
+    }
+    .texts {
+      margin: 1.5rem 0;
+    }
+  }
+  .btn-box {
+    display: flex;
+    margin-bottom: 1rem;
+    .bold-txt {
+      margin-left: 1rem;
+    }
+  }
+}

@@ -8,11 +8,6 @@
 }
 
 /*-------------------------------------------*/
-.bold-txt {
-  font-weight: 700;
-  letter-spacing: 0.5px;
-}
-
 .container {
   padding: 50px 200px;
 }
@@ -73,4 +68,26 @@
 }
 .container .select_box .box div {
   margin-right: 50px;
+}
+.container .popup_box {
+  margin-top: 200px;
+}
+.container .popup_box .popup {
+  width: 400px;
+}
+.container .balloons .box {
+  margin-bottom: 50px;
+}
+.container .balloons .box .left-msg,
+.container .balloons .box .right-msg {
+  width: 300px;
+}
+.container .balloons .box .right-msg {
+  margin-left: 250px;
+}
+.container .badges .box {
+  display: flex;
+}
+.container .badges .box div {
+  margin-right: 20px;
 }

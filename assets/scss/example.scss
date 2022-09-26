@@ -77,4 +77,30 @@
       }
     }
   }
+  .popup_box {
+    margin-top: 200px;
+    .popup {
+      width: 400px;
+    }
+  }
+  .balloons {
+    .box {
+      margin-bottom: 50px;
+      .left-msg,
+      .right-msg {
+        width: 300px;
+      }
+      .right-msg {
+        margin-left: 250px;
+      }
+    }
+  }
+  .badges {
+    .box {
+      display: flex;
+      div {
+        margin-right: 20px;
+      }
+    }
+  }
 }
