@@ -253,10 +253,11 @@
 ////////////////////////////////////////////////////////////////////////////////////
 //badges
 
-@mixin badge($padding: 0.3rem 0.2rem, $color: $color-black, $bg: $color-white, $border: 1px solid $color-black, $radius: 3px) {
+@mixin badge($padding: 0.3rem 0.4rem, $color: $color-black, $bg: $color-white, $border: 1px solid $color-black, $radius: 3px) {
   padding: $padding;
   color: $color;
   background-color: $bg;
   border: $border;
   border-radius: $radius;
+  @include g9-xs;
 }
