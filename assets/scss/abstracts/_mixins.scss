@@ -65,7 +65,7 @@
 ////////////////////////////////////////////////////////////////////////////////////
 ///buttons
 
-@mixin btn-style($padding: 0.8rem 1rem, $color: $color-black, $bg: $color-white, $border: 1px solid $color-black, $radius: 3px) {
+@mixin btn-style($padding: 0.7rem 0.6rem, $color: $color-black, $bg: $color-white, $border: 1px solid $color-black, $radius: 3px) {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,6 +93,7 @@
   color: $color;
   background-color: $bg;
   border: $border;
+  @extend %out-shadow;
 }
 
 @mixin disable-btn-style($opacity: 0.6) {
@@ -104,7 +105,7 @@
 //forms
 
 //input
-@mixin input-style($padding: 0.8rem 1rem, $color: $color-black, $bg: $color-white, $border: 1px solid $color-black, $radius: 3px) {
+@mixin input-style($padding: 0.55rem 0.8rem, $color: $color-black, $bg: $color-white, $border: 1px solid $color-black, $radius: 3px) {
   padding: $padding;
   color: $color;
   background-color: $bg;
@@ -171,10 +172,55 @@
   @extend %check-shadow;
 }
 
+//select-style
+@mixin select-style($padding: 0.7rem 0.6rem, $color: $color-black, $bg: $color-white, $border: 1px solid $color-black, $radius: 3px) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: $padding;
+  color: $color;
+  background-color: $bg;
+  border: $border;
+  border-radius: $radius;
+  @extend %box-out-shadow;
+
+  &:active {
+    @extend %in-shadow;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+  &:focus-visible {
+    outline: 1px solid $color-black;
+  }
+}
+
+@mixin box-style($padding: 0.8rem 1rem, $color: $color-black, $bg: $color-white, $border: 1px solid $color-black, $radius: 3px) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: $padding;
+  color: $color;
+  background-color: $bg;
+  border: $border;
+  border-radius: $radius;
+  @extend %box-out-shadow;
+
+  &:focus {
+    outline: 0;
+  }
+  &:focus-visible {
+    outline: 1px solid $color-black;
+  }
+}
+
 ////////////////////////////////////////////////////////////////////////////////////
 //popup
 
-@mixin box-style($padding: 0.8rem 1rem, $color: $color-black, $bg: $color-white, $border: 1px solid $color-black, $radius: 3px) {
+@mixin popup-style($padding: 0.8rem 1rem, $color: $color-black, $bg: $color-white, $border: 1px solid $color-black, $radius: 3px) {
   display: flex;
   justify-content: center;
   align-items: center;

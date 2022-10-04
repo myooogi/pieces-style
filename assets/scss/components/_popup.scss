@@ -6,7 +6,7 @@
 @import "../abstracts/functions";
 
 .popup {
-  @include box-style;
+  @include popup-style;
   flex-direction: column;
   .desc {
     text-align: center;

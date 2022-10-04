@@ -17,18 +17,17 @@ button {
 // btn- size
 .btn-sm {
   @include g9-xs;
-  @include btn-style(0.4rem 0.6rem 0.5rem 0.6rem);
+  @include btn-style(0.4rem 0.2rem 0.5rem 0.2rem);
 }
 .btn-lg {
   @include g14-sm;
-  @include btn-style(1rem 1.2rem);
+  @include btn-style;
 }
 
 // btn- style
 .point-btn {
   @include point-btn-style($color-white, $color-02);
   @extend %txt-shadow;
-  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.35);
 }
 .dark-btn {
   @include point-btn-style($color-white, $color-black, 1px solid $color-white);

@@ -20,13 +20,16 @@ $font-g14: "Galmuri14", sans-serif !default;
 
 //shadows
 %out-shadow {
-  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25), inset 1px 1px 0px rgba(0, 0, 0, 0.25);
 }
 %in-shadow {
-  box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5), inset 2px 2px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5), inset 2px 2px 0px rgba(0, 0, 0, 0.25);
 }
 %check-shadow {
   box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5), inset -1.7px -1.7px 0px rgba(0, 0, 0, 0.25);
+}
+%box-out-shadow {
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25);
 }
 
 //focus-visible remove

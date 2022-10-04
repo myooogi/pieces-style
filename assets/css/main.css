@@ -19,8 +19,8 @@
   text-shadow: 1.4px 0.6px 1.3px rgba(0, 0, 0, 0.9);
 }
 
-.popup, .select-box .option-list, .select-box .select-btn, .select select, .file label, .btn-lg, .btn-sm, button {
-  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25);
+.popup, .file label, .dark-btn, .point-btn, .btn-lg, .btn-sm, button {
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25), inset 1px 1px 0px rgba(0, 0, 0, 0.25);
 }
 
 .select-box .select-btn:active, .select select:active, .checkbox input:checked ~ span:before, .file label:active, .file .upload, input[type=text],
@@ -29,11 +29,15 @@
 [type=email],
 [type=tel],
 textarea, .btn-lg:active, .btn-sm:active, button:active {
-  box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5), inset 2px 2px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5), inset 2px 2px 0px rgba(0, 0, 0, 0.25);
 }
 
 .checkbox span:before {
   box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5), inset -1.7px -1.7px 0px rgba(0, 0, 0, 0.25);
+}
+
+.select-box .option-list, .select-box .select-btn, .select select {
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25);
 }
 
 .select-box .option-list li:focus-visible, .label span:focus-visible, .label:focus-visible {
@@ -315,8 +319,8 @@ video {
   text-shadow: 1.4px 0.6px 1.3px rgba(0, 0, 0, 0.9);
 }
 
-.popup, .select-box .option-list, .select-box .select-btn, .select select, .file label, .btn-lg, .btn-sm, button {
-  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25);
+.popup, .file label, .dark-btn, .point-btn, .btn-lg, .btn-sm, button {
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25), inset 1px 1px 0px rgba(0, 0, 0, 0.25);
 }
 
 .select-box .select-btn:active, .select select:active, .checkbox input:checked ~ span:before, .file label:active, .file .upload, input[type=text],
@@ -325,11 +329,15 @@ video {
 [type=email],
 [type=tel],
 textarea, .btn-lg:active, .btn-sm:active, button:active {
-  box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5), inset 2px 2px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5), inset 2px 2px 0px rgba(0, 0, 0, 0.25);
 }
 
 .checkbox span:before {
   box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5), inset -1.7px -1.7px 0px rgba(0, 0, 0, 0.25);
+}
+
+.select-box .option-list, .select-box .select-btn, .select select {
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25);
 }
 
 .select-box .option-list li:focus-visible, .label span:focus-visible, .label:focus-visible {
@@ -405,8 +413,8 @@ input[type=checkbox] {
   text-shadow: 1.4px 0.6px 1.3px rgba(0, 0, 0, 0.9);
 }
 
-.popup, .select-box .option-list, .select-box .select-btn, .select select, .file label, .btn-lg, .btn-sm, button {
-  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25);
+.popup, .file label, .dark-btn, .point-btn, .btn-lg, .btn-sm, button {
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25), inset 1px 1px 0px rgba(0, 0, 0, 0.25);
 }
 
 .select-box .select-btn:active, .select select:active, .checkbox input:checked ~ span:before, .file label:active, .file .upload, input[type=text],
@@ -415,11 +423,15 @@ input[type=checkbox] {
 [type=email],
 [type=tel],
 textarea, .btn-lg:active, .btn-sm:active, button:active {
-  box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5), inset 2px 2px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5), inset 2px 2px 0px rgba(0, 0, 0, 0.25);
 }
 
 .checkbox span:before {
   box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5), inset -1.7px -1.7px 0px rgba(0, 0, 0, 0.25);
+}
+
+.select-box .option-list, .select-box .select-btn, .select select {
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25);
 }
 
 .select-box .option-list li:focus-visible, .label span:focus-visible, .label:focus-visible {
@@ -448,8 +460,8 @@ textarea, .btn-lg:active, .btn-sm:active, button:active {
   text-shadow: 1.4px 0.6px 1.3px rgba(0, 0, 0, 0.9);
 }
 
-.popup, .select-box .option-list, .select-box .select-btn, .select select, .file label, .btn-lg, .btn-sm, button {
-  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25);
+.popup, .file label, .dark-btn, .point-btn, .btn-lg, .btn-sm, button {
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25), inset 1px 1px 0px rgba(0, 0, 0, 0.25);
 }
 
 .select-box .select-btn:active, .select select:active, .checkbox input:checked ~ span:before, .file label:active, .file .upload, input[type=text],
@@ -458,11 +470,15 @@ textarea, .btn-lg:active, .btn-sm:active, button:active {
 [type=email],
 [type=tel],
 textarea, .btn-lg:active, .btn-sm:active, button:active {
-  box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5), inset 2px 2px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5), inset 2px 2px 0px rgba(0, 0, 0, 0.25);
 }
 
 .checkbox span:before {
   box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5), inset -1.7px -1.7px 0px rgba(0, 0, 0, 0.25);
+}
+
+.select-box .option-list, .select-box .select-btn, .select select {
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25);
 }
 
 .select-box .option-list li:focus-visible, .label span:focus-visible, .label:focus-visible {
@@ -474,7 +490,7 @@ button {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  padding: 0.8rem 1rem;
+  padding: 0.7rem 0.6rem;
   color: #000;
   background-color: #fff;
   border: 1px solid #000;
@@ -496,7 +512,7 @@ button span:focus-visible {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  padding: 0.4rem 0.6rem 0.5rem 0.6rem;
+  padding: 0.4rem 0.2rem 0.5rem 0.2rem;
   color: #000;
   background-color: #fff;
   border: 1px solid #000;
@@ -515,7 +531,7 @@ button span:focus-visible {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  padding: 1rem 1.2rem;
+  padding: 0.7rem 0.6rem;
   color: #000;
   background-color: #fff;
   border: 1px solid #000;
@@ -532,7 +548,6 @@ button span:focus-visible {
   color: #fff;
   background-color: #6d57f1;
   border: 1px solid #000;
-  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.35);
 }
 
 .dark-btn {
@@ -573,8 +588,8 @@ button span:focus-visible {
   text-shadow: 1.4px 0.6px 1.3px rgba(0, 0, 0, 0.9);
 }
 
-.popup, .select-box .option-list, .select-box .select-btn, .select select, .file label, button, .btn-sm, .btn-lg {
-  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25);
+.popup, .file label, button, .btn-sm, .btn-lg, .point-btn, .dark-btn {
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25), inset 1px 1px 0px rgba(0, 0, 0, 0.25);
 }
 
 .select-box .select-btn:active, .select select:active, .checkbox input:checked ~ span:before, .file label:active, .file .upload, input[type=text],
@@ -583,11 +598,15 @@ button span:focus-visible {
 [type=email],
 [type=tel],
 textarea, button:active, .btn-sm:active, .btn-lg:active {
-  box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5), inset 2px 2px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5), inset 2px 2px 0px rgba(0, 0, 0, 0.25);
 }
 
 .checkbox span:before {
   box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5), inset -1.7px -1.7px 0px rgba(0, 0, 0, 0.25);
+}
+
+.select-box .option-list, .select-box .select-btn, .select select {
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25);
 }
 
 .select-box .option-list li:focus-visible, .label span:focus-visible, .label:focus-visible {
@@ -600,7 +619,7 @@ input[type=text],
 [type=email],
 [type=tel],
 textarea {
-  padding: 0.8rem 1rem;
+  padding: 0.55rem 0.8rem;
   color: #000;
   background-color: #fff;
   border: 1px solid #000;
@@ -641,7 +660,7 @@ input[type=file],
   display: flex;
 }
 .file .upload {
-  padding: 0.8rem 1rem;
+  padding: 0.55rem 0.8rem;
   color: #000;
   background-color: #fff;
   border: 1px solid #000;
@@ -658,7 +677,7 @@ input[type=file],
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  padding: 0.8rem 1rem;
+  padding: 0.55rem 0.8rem;
   color: #000;
   background-color: #fff;
   border: 1px solid #000;
@@ -895,8 +914,8 @@ input[type=radio]:disabled + span {
   text-shadow: 1.4px 0.6px 1.3px rgba(0, 0, 0, 0.9);
 }
 
-.popup, button, .btn-sm, .btn-lg, .file label, .select select, .select-box .select-btn, .select-box .option-list {
-  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25);
+.popup, button, .btn-sm, .btn-lg, .point-btn, .dark-btn, .file label {
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25), inset 1px 1px 0px rgba(0, 0, 0, 0.25);
 }
 
 button:active, .btn-sm:active, .btn-lg:active, input[type=text],
@@ -905,11 +924,15 @@ button:active, .btn-sm:active, .btn-lg:active, input[type=text],
 [type=email],
 [type=tel],
 textarea, .file .upload, .file label:active, .checkbox input:checked ~ span:before, .select select:active, .select-box .select-btn:active {
-  box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5), inset 2px 2px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5), inset 2px 2px 0px rgba(0, 0, 0, 0.25);
 }
 
 .checkbox span:before {
   box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5), inset -1.7px -1.7px 0px rgba(0, 0, 0, 0.25);
+}
+
+.select select, .select-box .select-btn, .select-box .option-list {
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25);
 }
 
 .label:focus-visible, .label span:focus-visible, .select-box .option-list li:focus-visible {
@@ -975,8 +998,8 @@ body, .popup .desc .title {
   text-shadow: 1.4px 0.6px 1.3px rgba(0, 0, 0, 0.9);
 }
 
-button, .btn-sm, .btn-lg, .file label, .select select, .select-box .select-btn, .select-box .option-list, .popup {
-  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25);
+button, .btn-sm, .btn-lg, .point-btn, .dark-btn, .file label, .popup {
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25), inset 1px 1px 0px rgba(0, 0, 0, 0.25);
 }
 
 button:active, .btn-sm:active, .btn-lg:active, input[type=text],
@@ -985,11 +1008,15 @@ button:active, .btn-sm:active, .btn-lg:active, input[type=text],
 [type=email],
 [type=tel],
 textarea, .file .upload, .file label:active, .checkbox input:checked ~ span:before, .select select:active, .select-box .select-btn:active {
-  box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5), inset 2px 2px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5), inset 2px 2px 0px rgba(0, 0, 0, 0.25);
 }
 
 .checkbox span:before {
   box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5), inset -1.7px -1.7px 0px rgba(0, 0, 0, 0.25);
+}
+
+.select select, .select-box .select-btn, .select-box .option-list {
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5), inset -2px -2px 0px rgba(0, 0, 0, 0.25);
 }
 
 .label:focus-visible, .label span:focus-visible, .select-box .option-list li:focus-visible {

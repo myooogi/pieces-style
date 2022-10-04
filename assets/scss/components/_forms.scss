@@ -37,10 +37,10 @@ input[type="file"],
 .file {
   display: flex;
   .upload {
-    @include input-style;
+    @include input-style(0.55rem 0.8rem);
   }
   label {
-    @include btn-style;
+    @include btn-style(0.55rem 0.8rem);
     position: relative;
     margin-left: 5px;
   }
@@ -91,7 +91,7 @@ input[type="radio"] {
     right: 10px;
   }
   select {
-    @include btn-style(0.8rem 3.5rem 0.8rem 1rem);
+    @include select-style(0.8rem 3.5rem 0.8rem 1rem);
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -106,7 +106,7 @@ input[type="radio"] {
 .select-box {
   position: relative;
   .select-btn {
-    @include btn-style(0.8rem 3.5rem 0.8rem 1rem);
+    @include select-style(0.8rem 3.5rem 0.8rem 1rem);
     position: relative;
     &:after {
       @include pseudo;
